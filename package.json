@@ -1,15 +1,18 @@
 {
-  "name": "wsproxy",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "browserproxy",
+	"version": "1.0.50",
+	"scripts": {
+		"dev": "bun run --watch src/index.ts",
+		"start": "bun run src/index.ts",
+		"format": "biome format --write ."
+	},
+	"dependencies": {
+		"hono": "^4.6.4",
+		"puppeteer-core": "^22.15.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.3",
+		"bun-types": "^1.1.30"
+	},
+	"module": "src/index.js"
 }
